@@ -22,7 +22,9 @@ This project is divided into multiple components.
 
 ### My Book Sentiment
 
-This part of the project constitutes the first two aspects of analyzing the sentiments of the classic literary novels.
+This part of the project constitutes the first two aspects of analyzing the sentiments of the classic literary novels. 
+
+The libraries used are Pandas, NLTK and Matplotlib. Vader's sentiment analyzer is used to conduct the sentiment analysis.
 
 The list of novels is retrieved from [Tolstoy Therapy](https://www.tolstoytherapy.com/bibliotherapy-recommendations/).
 The books are extracted from [Project Gutenberg](http://gutenberg.org/) which includes a vast number of copyright free ebooks.
