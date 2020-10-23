@@ -54,7 +54,7 @@ def plottin(bk, s, n):
     plt.figure(figsize=(10, 8))
     bk.plot(kind='hist')
     plt.xlabel(n)
-    plt.ylabel('Sentiment with mean = {}'.format(s.mean()))
+    plt.ylabel('Sentiment with mean = {}'.format(round(s.mean(), 3)))
     plt.show()
 
 def plotmybook():
