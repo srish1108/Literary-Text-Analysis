@@ -1,36 +1,59 @@
-## Welcome to GitHub Pages
+## Welcome to Literary Text Analysis
 
-You can use the [editor on GitHub](https://github.com/srish1108/Literary-Text-Analysis/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+**This project delves into the scientization of literary texts used in Bibliotherapy.**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Photo by Joel Muniz](https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Bibliotherapy
 
-```markdown
-Syntax highlighted code block
+[Bibliotherapy](https://en.wikipedia.org/wiki/Bibliotherapy#:~:text=Bibliotherapy%20(also%20referred%20to%20as,with%20the%20purpose%20of%20healing.) is the study of literary texts and their effects on the reader as a means of therapy. It is found to be useful in treatment of mental health especially patients with [mild depression](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.1814). The literary texts used are often selected from the self help genre but sometimes fiction and graphic novels (in the case of children) are used too.
 
-# Header 1
-## Header 2
-### Header 3
+### Project
 
-- Bulleted
-- List
+[Photo by Andrew Neel](https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60)
 
-1. Numbered
-2. List
+This project is divided into multiple components.
 
-**Bold** and _Italic_ and `Code` text
+- Prepare and extract a copyright free list of books known to have been used in Bibliotherapy
 
-[Link](url) and ![Image](src)
-```
+- Create a sentiment analyzer and plot graphs that show the range of sentiments in the entire text
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- Continue with text preprocessing to prepare the data for further text analysis
 
-### Jekyll Themes
+- Extract the most used words, including positive and negative words
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/srish1108/Literary-Text-Analysis/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Compare the texts in terms of sentiments and language to learn the similarities among them for further use
+
+### My Book Sentiment
+
+This part of the project constitutes the first two aspects of analyzing the sentiments of the classic literary novels.
+
+The list of novels is retrieved from [Tolstoy Therapy](https://www.tolstoytherapy.com/bibliotherapy-recommendations/).
+The books are extracted from [Project Gutenberg](http://gutenberg.org/) which includes a vast number of copyright free ebooks.
+
+The novels used in this project are classics and are as follows: 
+
+- A Little Princess, by Frances Hodgson Burnett
+- War and Peace, by Leo Tolstoy
+- The Count of Monte Cristo, by Alexandre Dumas
+- Jane Eyre, by Charlotte Bronte
+- The Odyssey, by Homer
+- Meditations, by Marcus Aurelius
+- Great Expectations, by Charles Dickens
+- The Enchanted April, by Elizabeth von Arnim
+
+A common observation in the sentiment analysis of the books altogether is that they have a positive mean and most of the book ranges from neutral (0) to positive (+1) sentiments. While each of the book as a whole has sentiments varying from negative(-1) to positive(+1), a major portion lies in the positive zone utilizing themes of love, joy and happiness. Here are some of the graphs for you take a look at:
+
+![The Little Princess](https://user-images.githubusercontent.com/65708254/96993831-76829f80-1549-11eb-9701-34f49831e1e7.png, https://user-images.githubusercontent.com/65708254/96993835-784c6300-1549-11eb-8f66-24beb444913d.png)
+
+![Meditations_sentiment](https://user-images.githubusercontent.com/65708254/96993789-6965b080-1549-11eb-8167-9f0085c4ad11.png, https://user-images.githubusercontent.com/65708254/96993786-68348380-1549-11eb-831c-d8d4d4460968.png)
+
+![Jane Eyre](https://user-images.githubusercontent.com/65708254/96993770-62d73900-1549-11eb-9385-6bb9ad5fd1ab.png, https://user-images.githubusercontent.com/65708254/96993777-65d22980-1549-11eb-9518-82a80b33942a.png)
+
+
+You can take a look at the entire project [here](https://github.com/srish1108/Literary-Text-Analysis), I'll be updating it in the coming few weeks to add all the features. If you found this useful or have any questions regarding it, do let me know. Thank you.
+
 
 ### Support or Contact
 
