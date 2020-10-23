@@ -15,15 +15,6 @@ url = ['http://gutenberg.org/files/146/146-h/146-h.htm ',
        'http://gutenberg.org/files/1400/1400-h/1400-h.htm',
        'http://gutenberg.org/cache/epub/16389/pg16389-images.html']
 
-bk1 = pd.DataFrame(columns=['Text'])
-bk2 = pd.DataFrame(columns=['Text'])
-bk3 = pd.DataFrame(columns=['Text'])
-bk4 = pd.DataFrame(columns=['Text'])
-bk5 = pd.DataFrame(columns=['Text'])
-bk6 = pd.DataFrame(columns=['Text'])
-bk7 = pd.DataFrame(columns=['Text'])
-bk8 = pd.DataFrame(columns=['Text'])
-
 def book(i,bk):
         req = Request(url=url[i-1], headers={'user-agent': 'booksays'})
         response = urlopen(req)
@@ -58,6 +49,7 @@ def plottin(bk, s, n):
     plt.show()
 
 def plotmybook():
+    new = pd.DataFrame(columns=['Text'])
     print('These are the available books:\n',
           1, ' A Little Princess, by Frances Hodgson Burnett\n',
           2, ' War and Peace, by Leo Tolstoy\n',
@@ -70,28 +62,20 @@ def plotmybook():
 
     b = int(input('Which number book do you want to see?'))
     if b == 1:
-        new = bk1
         y = 'A Little Princess, by Frances Hodgson Burnett'
     elif b == 2:
-        new = bk2
         y = 'War and Peace, by Leo Tolstoy'
     elif b == 3:
-        new = bk3
         y = 'The Count of Monte Cristo, by Alexandre Dumas'
     elif b == 4:
-        new = bk4
         y = 'Jane Eyre, by Charlotte Bronte'
     elif b == 5:
-        new = bk5
         y = 'The Odyssey, by Homer'
     elif b == 6:
-        new = bk6
         y = 'Meditations, by Marcus Aurelius'
     elif b == 7:
-        new = bk7
         y = 'Great Expectations, by Charles Dickens'
     else:
-        new = bk8
         y = 'The Enchanted April, by Elizabeth von Arnim'
 
     new = book(b, new)
@@ -99,4 +83,3 @@ def plotmybook():
     plottin(new, new['sentiment'], y)
 
 plotmybook()
-
