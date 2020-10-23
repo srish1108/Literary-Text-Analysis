@@ -7,7 +7,7 @@
 
 ### Bibliotherapy
 
-[Bibliotherapy](https://en.wikipedia.org/wiki/Bibliotherapy#:~:text=Bibliotherapy%20(also%20referred%20to%20as,with%20the%20purpose%20of%20healing.) is the study of literary texts and their effects on the reader as a means of therapy. It is found to be useful in treatment of mental health especially patients with [mild depression](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.1814). The literary texts used are often selected from the self help genre but sometimes fiction and graphic novels (in the case of children) are used too.
+[Bibliotherapy](https://en.wikipedia.org/wiki/Bibliotherapy#:~:text=Bibliotherapy%20(also%20referred%20to%20as,with%20the%20purpose%20of%20healing) is the study of literary texts and their effects on the reader as a means of therapy. It is found to be useful in treatment of mental health especially patients with [mild depression](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.1814). The literary texts used are often selected from the self help genre but sometimes fiction and graphic novels (in the case of children) are used too.
 
 ### Project
 
@@ -45,11 +45,17 @@ The novels used in this project are classics and are as follows:
 
 A common observation in the sentiment analysis of the books altogether is that they have a positive mean and most of the book ranges from neutral (0) to positive (+1) sentiments. While each of the book as a whole has sentiments varying from negative(-1) to positive(+1), a major portion lies in the positive zone utilizing themes of love, joy and happiness. Here are some of the graphs for you take a look at:
 
-![The Little Princess](https://user-images.githubusercontent.com/65708254/96993831-76829f80-1549-11eb-9701-34f49831e1e7.png, https://user-images.githubusercontent.com/65708254/96993835-784c6300-1549-11eb-8f66-24beb444913d.png)
+![The Little Princess](https://user-images.githubusercontent.com/65708254/96993831-76829f80-1549-11eb-9701-34f49831e1e7.png)
 
-![Meditations_sentiment](https://user-images.githubusercontent.com/65708254/96993789-6965b080-1549-11eb-8167-9f0085c4ad11.png, https://user-images.githubusercontent.com/65708254/96993786-68348380-1549-11eb-831c-d8d4d4460968.png)
+![The Little Princess](https://user-images.githubusercontent.com/65708254/96993835-784c6300-1549-11eb-8f66-24beb444913d.png)
 
-![Jane Eyre](https://user-images.githubusercontent.com/65708254/96993770-62d73900-1549-11eb-9385-6bb9ad5fd1ab.png, https://user-images.githubusercontent.com/65708254/96993777-65d22980-1549-11eb-9518-82a80b33942a.png)
+![Meditations_sentiment](https://user-images.githubusercontent.com/65708254/96993789-6965b080-1549-11eb-8167-9f0085c4ad11.png)
+
+![Meditations_sentiment](https://user-images.githubusercontent.com/65708254/96993786-68348380-1549-11eb-831c-d8d4d4460968.png)
+
+![Jane Eyre](https://user-images.githubusercontent.com/65708254/96993770-62d73900-1549-11eb-9385-6bb9ad5fd1ab.png)
+
+![Jane Eyre](https://user-images.githubusercontent.com/65708254/96993777-65d22980-1549-11eb-9518-82a80b33942a.png)
 
 
 You can take a look at the entire project [here](https://github.com/srish1108/Literary-Text-Analysis), I'll be updating it in the coming few weeks to add all the features. If you found this useful or have any questions regarding it, do let me know. Thank you.
