@@ -2,16 +2,16 @@
 
 **This project delves into the scientization of literary texts used in Bibliotherapy.**
 
-[Photo by Joel Muniz](https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+[Photo by Joel Muniz](<img width="688" alt="bb" src="https://user-images.githubusercontent.com/65708254/96995338-ac288800-154b-11eb-9ee9-82648134a07d.PNG">)
 
 
 ### Bibliotherapy
 
-[Bibliotherapy](https://en.wikipedia.org/wiki/Bibliotherapy#:~:text=Bibliotherapy%20(also%20referred%20to%20as,with%20the%20purpose%20of%20healing) is the study of literary texts and their effects on the reader as a means of therapy. It is found to be useful in treatment of mental health especially patients with [mild depression](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.1814). The literary texts used are often selected from the self help genre but sometimes fiction and graphic novels (in the case of children) are used too.
+[Bibliotherapy](https://en.wikipedia.org/wiki/Bibliotherapy#:~:text=Bibliotherapy%20) is the study of literary texts and their effects on the reader as a means of therapy. It is found to be useful in treatment of mental health especially patients with [mild depression](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.1814). The literary texts used are often selected from the self help genre but sometimes fiction and graphic novels (in the case of children) are used too.
 
 ### Project
 
-[Photo by Andrew Neel](https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60)
+[Photo by Andrew Neel](<img width="449" alt="bbb" src="https://user-images.githubusercontent.com/65708254/96995373-b9de0d80-154b-11eb-9ecd-6bb5ab56d74b.PNG">)
 
 This project is divided into multiple components.
 
