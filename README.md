@@ -48,7 +48,7 @@ A common observation in the sentiment analysis of the books altogether is that t
 
 ![Meditations_sentiment](https://user-images.githubusercontent.com/65708254/96993789-6965b080-1549-11eb-8167-9f0085c4ad11.png)
 
-![Meditations_sentiment](https://user-images.githubusercontent.com/65708254/96993786-68348380-1549-11eb-831c-d8d4d4460968.png)
+![Meditations_sentiment](https://user-images.githubusercontent.com/65708254/97003252-ccab0f00-1558-11eb-8911-f567271e70d7.png)
 
 ![Jane Eyre](https://user-images.githubusercontent.com/65708254/96993770-62d73900-1549-11eb-9385-6bb9ad5fd1ab.png)
 
