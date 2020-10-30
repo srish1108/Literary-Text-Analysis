@@ -7,7 +7,6 @@ import nltk
 nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
-
 url = ['http://gutenberg.org/files/146/146-h/146-h.htm ',
        'http://gutenberg.org/files/2600/2600-h/2600-h.htm',
        'http://gutenberg.org/files/1184/1184-h/1184-h.htm',
@@ -37,24 +36,25 @@ def book(i):
             books = books.replace(to_replace=['\r', '\n'], value='', regex=True)
         return books
 
-def sentiments(books):
+def sentiments(books, i):
     vader = SentimentIntensityAnalyzer()
-    score = lambda title: vader.polarity_scores(title)['compound']
-    sentiment = books['Text'].apply(score)
-    return sentiment
+    avgsentiment = books['Text'].apply(lambda title: vader.polarity_scores(title)['compound'])
+    positive = books['Text'].apply(lambda title: vader.polarity_scores(title)['pos'])
+    neutral = books['Text'].apply(lambda title: vader.polarity_scores(title)['neu'])
+    negative = books['Text'].apply(lambda title: vader.polarity_scores(title)['neg'])
+    a = [avgsentiment, positive, neutral, negative]
+    return a[i]
 
-def plotsentiment(books, sentiment, name):
-    # plot sentiment through book
-    plt.plot(range(len(books['Text'])), sentiment)
-    plt.xlabel(name)
-    plt.ylabel('Sentiment through the book')
+def plotsentiment(books, avgsentiment, name):
+    # plot average sentiment through book
+    plt.plot(range(len(books['Text'])), avgsentiment)
+    plt.xlabel('Paragraphs from {}'.format(name))
+    plt.ylabel('Sentiment with mean={}'.format(round(avgsentiment.mean(), 3)))
     plt.show()
     # plot sentiment graph
-    plt.figure(figsize=(10, 8))
-    books.plot(kind='hist')
-    plt.xlabel(name)
-    plt.ylabel('Sentiment with mean = {}'.format(round(sentiment.mean(), 3)))
-    plt.show()
+    books[["positive", "negative", "neutral"]].plot(kind='hist', alpha=0.4, legend=True)
+    plt.ylabel('Range of sentiments')
+    plt.xlabel('Paragraphs from {}'.format(name))
 
 def plotbooksentiment():
     print('These are the available books:\n',
@@ -69,7 +69,10 @@ def plotbooksentiment():
 
     book_id = int(input('Which number book do you want to see?'))
     new = book(book_id)
-    new['sentiment'] = sentiments(new)
+    new['sentiment'] = sentiments(new, 0)
+    new['negative'] = sentiments(new, 1)
+    new['positive'] = sentiments(new, 2)
+    new['neutral'] = sentiments(new, 3)
     plotsentiment(new, new['sentiment'], names[book_id - 1])
 
 plotbooksentiment()
