@@ -53,8 +53,8 @@ def plotsentiment(books, avgsentiment, name):
     plt.show()
     # plot sentiment graph
     books[["positive", "negative", "neutral"]].plot(kind='hist', alpha=0.4, legend=True)
-    plt.xlabel('Paragraphs from {}'.format(name))
-    plt.ylabel('Range of sentiments')
+    plt.ylabel('Paragraphs from {}'.format(name))
+    plt.xlabel('Range of sentiments')
 
 def plotbooksentiment():
     print('These are the available books:\n',
