@@ -7,6 +7,7 @@ import nltk
 nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
+
 url = ['http://gutenberg.org/files/146/146-h/146-h.htm ',
        'http://gutenberg.org/files/2600/2600-h/2600-h.htm',
        'http://gutenberg.org/files/1184/1184-h/1184-h.htm',
@@ -45,16 +46,16 @@ def sentiments(books, i):
     a = [avgsentiment, positive, neutral, negative]
     return a[i]
 
-def plotsentiment(books, avgsentiment, name):
-    # plot average sentiment through book
-    plt.plot(range(len(books['Text'])), avgsentiment)
+def plotsentiment(books, name):
+    # plot average sentiment throughout the book
+    books['sentiment'].plot(kind='hist')
     plt.xlabel('Paragraphs from {}'.format(name))
-    plt.ylabel('Sentiment with mean={}'.format(round(avgsentiment.mean(), 3)))
+    plt.ylabel('Sentiment with mean={}'.format(round((books.sentiment).mean(), 3)))
     plt.show()
-    # plot sentiment graph
-    books[["positive", "negative", "neutral"]].plot(kind='hist', alpha=0.4, legend=True)
-    plt.ylabel('Paragraphs from {}'.format(name))
-    plt.xlabel('Range of sentiments')
+    # plot all sentiments
+    books[["positive", "negative", "neutral"]].plot(alpha=0.4, legend=True)
+    plt.xlabel('Paragraphs from {}'.format(name))
+    plt.ylabel('Range of sentiments with their magnitude')
 
 def plotbooksentiment():
     print('These are the available books:\n',
@@ -73,6 +74,6 @@ def plotbooksentiment():
     new['negative'] = sentiments(new, 1)
     new['positive'] = sentiments(new, 2)
     new['neutral'] = sentiments(new, 3)
-    plotsentiment(new, new['sentiment'], names[book_id - 1])
+    plotsentiment(new, names[book_id - 1])
 
 plotbooksentiment()
