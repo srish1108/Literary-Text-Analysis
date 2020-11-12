@@ -67,7 +67,7 @@ def plotbooksentiment():
           7, ' Great Expectations, by Charles Dickens\n',
           8, ' The Enchanted April, by Elizabeth von Arnim\n')
 
-    book_id = int(input('Which number book do you want to see?'))
+    book_id = int(input('Enter the number of the book you wish to plot'))
     new = book(book_id)
     new['sentiment'] = sentiments(new, 0)
     new['negative'] = sentiments(new, 1)
