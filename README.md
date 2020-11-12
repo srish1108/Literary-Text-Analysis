@@ -52,11 +52,11 @@ Here are some of the graphs for you take a look at:
 
 ![The Little Princess : overall sentiment](https://user-images.githubusercontent.com/65708254/96993835-784c6300-1549-11eb-8f66-24beb444913d.png)
 
-![Meditations : range of sentiments](https://user-images.githubusercontent.com/65708254/96993789-6965b080-1549-11eb-8167-9f0085c4ad11.png)
+![Meditations : range of sentiments](https://user-images.githubusercontent.com/65708254/98940925-c84b9380-2511-11eb-982f-4683e8fcf89f.png)
 
 ![Meditations : overall sentiment](https://user-images.githubusercontent.com/65708254/97003252-ccab0f00-1558-11eb-8911-f567271e70d7.png)
 
-![Jane Eyre : range of sentiments](https://user-images.githubusercontent.com/65708254/96993770-62d73900-1549-11eb-9385-6bb9ad5fd1ab.png)
+![Jane Eyre : range of sentiments](https://user-images.githubusercontent.com/65708254/98940943-ceda0b00-2511-11eb-9b68-f660ec142a1a.png)
 
 ![Jane Eyre : overall sentiment](https://user-images.githubusercontent.com/65708254/96993777-65d22980-1549-11eb-9518-82a80b33942a.png)
 
