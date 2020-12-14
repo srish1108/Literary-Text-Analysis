@@ -61,11 +61,20 @@ Here are some of the graphs for you take a look at:
 
 #### Emotion Analysis:
 
-With the help of the **NRC Emotion Lexicon**, which is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive), the given literary texts were analysed.
+With the help of the [**NRC Emotion Lexicon**](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm), which is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive), the given literary texts were analysed.
 
 - The most observed emotions throughout the texts are positive emotions of **Trust** and **Anticipation**
 - The least observed of all the emotions were those of **Disgust** and **Surprise**
 - There is a strong presence of positive emotions over the negative ones in each of these texts
+
+Here are a few examples for you take a look at:
+
+![Overall emotions](https://user-images.githubusercontent.com/65708254/102092077-a6616b80-3e45-11eb-95c7-e576dc6924ca.png)
+
+![The Count of Monte Cristo emotions](https://user-images.githubusercontent.com/65708254/102092145-bd07c280-3e45-11eb-82d3-07c62c8d70ab.png)
+
+![Meditations emotions](https://user-images.githubusercontent.com/65708254/102092232-da3c9100-3e45-11eb-9187-12b85d95a781.png)
+
 
 You can take a look at the entire project [here](https://github.com/srish1108/Literary-Text-Analysis), I'll be updating it in the coming few weeks to add all the features. If you found this useful or have any questions regarding it, do let me know. Thank you.
 
