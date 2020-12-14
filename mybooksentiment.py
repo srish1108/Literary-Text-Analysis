@@ -1,4 +1,4 @@
-pip install -r requirement.txt
+pip install -r requirements.txt
 
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
